@@ -203,7 +203,7 @@ void insertaFinalList(nodo *p, nodo * datos_lista)
   char sn[3];
  nodo *t;//Creamos el nodo que insertariamos al final de la lista 
  nodo *q;
- t = p;
+ t = p;// el nodo final va ser igual al primer nodo
   cout<<"      *** INTRODUCCION DE MERCANCIA ***    "<<endl;
 	cout<<"\t1. Codigo del Producto   : ";
   cin>>datos_lista->codigo;
@@ -233,10 +233,10 @@ void insertaFinalList(nodo *p, nodo * datos_lista)
 
   }
 
- while(t->siguiente != NULL){
+ while(t->siguiente != NULL){// minetas nodo sea diferente de null oseas que la lista tenga datos
   t =  t->siguiente;
  } 
- q = new nodo();
+ q = new nodo();// reservamos memoria a q
  q= datos_lista;
  q->siguiente = NULL;
  t->siguiente = q;
