@@ -17,6 +17,7 @@ typedef struct lista
 }nodo;// declaramos un tipo de dato de la estructura llamadas nodo
  
 int main(){
+  cout<<"Mensaje para git en la rama b"<<endl;
   int op;
  nodo *p;// primer nodo de la lista
  nodo *dato_lista = new nodo();
@@ -45,7 +46,7 @@ int main(){
   switch (op)
   {
    case 1:
-    op=opAgregar();
+    op=opAgregar();// opcion de menu para agregar en la lista
     switch (op)
     {
      case 1:
